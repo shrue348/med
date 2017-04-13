@@ -261,11 +261,13 @@ select {
     padding: 0 16px;
     -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; 
 }
-.search__submit { border: none; } 
- 
+.search__submit { border: none; background: url(../img/ico_search.png) no-repeat scroll center transparent; padding: 0; display: inline-block; width: 33px; height: 33px; vertical-align: middle;} 
 
-.header__bottom { padding: 21px 0; }
-.logo__link { display: inline-block; margin-top: 15px; }
+
+.header__bottom { padding: 24px 0 15px; }
+.logo__link { display: inline-block; margin-top: 10px;  }
+
+.header__phone { line-height: 1; }
 
 
 .header__grey_line { background-color: #f7f6f5; line-height: 28px;  }
