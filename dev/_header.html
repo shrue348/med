@@ -9,20 +9,27 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/iconic.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/ready.js"></script>
 </head>
 <body>
 
 <div class="header">
 	<div class="header__top">
 		<div class="wrapper">
-			<a href="" class="header__btn col-3">Услуги</a>
-			<a href="" class="header__btn col-3">Лаборатория</a>
-			<a href="" class="header__btn col-3">Косметология</a>
-			<div class="header__search search col-3">
-				<form action="">
-					<input class="search__input" type="text" placeholder="Поиск">
-					<button class="search__submit"></button>
-				</form>
+			<div class="header__top_btns table table-fixed">
+				<a href="" class="header__btn table-cell">Услуги</a>
+				<a href="" class="header__btn table-cell">Лаборатория</a>
+				<a href="" class="header__btn table-cell">Косметология</a>
+				<div class="header__search search table-cell">
+					<form action="">
+						<input class="search__input" type="text" placeholder="Поиск">
+						<button class="search__submit"></button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -35,15 +42,27 @@
 					</a>
 				</div>
 				<div class="header__logo col-4">
-					<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
-					<span class="font12 colorgrey">По вопросам санкнижек:</span><br>
-					<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					<div class="col-6">
+						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+						<span class="font12 colorgrey">По вопросам санкнижек:</span><br>
+						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					</div>
+					<div class="col-6">
+						<div class="header__metro header__metro-red">Лесная</div>
+						<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
+					</div>
 				</div>
 				<div class="header__logo col-4">
-					<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
-					<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
-					<span class="font12 colorgrey">По вопросам санкнижек:</span><br>
-					<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					<div class="col-6">
+						<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
+						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+						<span class="font12 colorgrey">По вопросам санкнижек:</span><br>
+						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					</div>
+					<div class="col-6">
+						<div class="header__metro header__metro-blue">Купчино</div>
+						<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -61,6 +80,37 @@
 				<a href="" class="header__soc_icon"><i class="icon-facebook"></i></a>
 				<a href="" class="header__soc_icon"><i class="icon-vkontakte"></i></a>
 			</div>
+		</div>
+	</div>
+
+	<div class="main_menu">
+		<div class="wrapper">
+			<ul class="main_menu__list">
+				<li class="main_menu__item"><a href="" class="main_menu__link">О центре</a></li>
+				<li class="main_menu__item">
+					<a href="" class="main_menu__link">Услуги</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Корпоративным клиентам</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медкомиссии</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медецинские справки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медицинские анализы</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Вакцинация</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Гинекология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Рентгенология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Санитарные книжки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">УЗИ</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Стоматология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Профосмотры</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Функциональная диагностика</a></li>
+					</ul>
+				</li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Консультация врачей</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Цены</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Информация</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Статьи</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
