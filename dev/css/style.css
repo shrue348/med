@@ -233,20 +233,22 @@ select {
 
 .btn {
     font-size: 20px;
-    border: 1px solid #FFD530;
+    border: none;
     display: inline-block;
-    line-height: 50px;
-    height: 50px;
-    color: #FFD530;
-    border-radius: 50px;
-    padding: 0 28px;
+    line-height: 38px;
+    height: 38px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 17px;
     transition: all 0.2s ease;
-    margin-bottom: 32px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #ee464e;
+    text-align: center;
 }
-.btn:hover { background-color: #FFD530; color: #fff; }
+.btn:hover { background-color: #f67177; }
+.btn:active { -webkit-transform: translateY(2px); -moz-transform: translateY(2px); transform: translateY(2px);}
 
 
 
@@ -394,9 +396,11 @@ select {
 .dispanser__item_phone { padding: 0 10px 0 39px; font-size: 12px; font-weight: bold; margin-bottom: 10px;}
 
 
-
-
-
+/*-------Foto---------*/
+.foto {}
+.foto_cat__item { margin-bottom: 30px; }
+.foto_cat__item_img { display: block; line-height: 1; border-radius: 8px; }
+.foto_cat__item_phone { display: inline-block;}
 
 
 
