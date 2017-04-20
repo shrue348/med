@@ -5,4 +5,6 @@ $(function(){
 		dots: true,
 		slidesToShow: 6
 	});
+
+	baguetteBox.run('.baguetteBox');
 });

@@ -6,7 +6,7 @@ body {
     line-height: 1.3;
     font-weight: 400;
     font-family: sans-serif;
-    color: #000;
+    color: #57585A;
     background-color: #fff;
 }
 body:after{
@@ -166,7 +166,7 @@ h4, h5, h6, .h4, .h5, .h6 { margin-bottom: 10px; }
 
 .colorwhite {color: #fff !important;}
 .colorblack { color: #2C3E50;}
-.colorgrey {color: #58595b;}
+.colorgrey {color: #57585A;}
 .colorlgrey {color: #999999;}
 .colorred {color: #ff020c;}
 .colorblue {color: #005191;}
@@ -204,27 +204,25 @@ select {
     border: 1px solid #d4d4d4;
     outline: none;
 
-     -webkit-appearance: menulist;
+    -webkit-appearance: menulist;
 }
 
-.form_wrap { border: 1px solid #e6e6e6; background-color: #fafafa; padding: 17px; box-sizing: border-box;  max-width: 500px;}
+.form_wrap { border: 1px solid #d7d7d7; background-color: #faf9f9; padding: 17px; box-sizing: border-box; border-radius: 8px; padding: 25px 40px;}
 .form input[type="text"], .form input[type="password"], .form input[type="email"], .form input[type="number"], .form input[type="tel"], .form input[type="url"], .form textarea {
-    border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
-    padding: 7px 12px 5px; border: 1px solid #d4d4d4;
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    padding: 7px 12px 5px 30px; border: 1px solid #bfc1c3;
     width: 100%; max-width: 100%; box-sizing: border-box;
-    background-color: #F3F3F3;
+    background-color: #fff;
     -webkit-appearance: none;
-    margin-bottom: 20px;
     font-size: 14px;
 }
 
 .form input[type="text"]:focus, .form input[type="password"]:focus, .form input[type="email"]:focus, .form input[type="number"]:focus, .form input[type="tel"]:focus, .form input[type="url"]:focus, .form textarea:focus {
-    border-color: #7A8968;
-    background-color: #fafafa;
+    border-color: #EE464E;
 } 
 .form input[type="submit"] {}
 
-.txt { line-height: 1.5; color: #000;}
+.txt { line-height: 1.2; color: #000;}
 .txt h2, .txt h3, .txt h4 { line-height: 1.3;}
 .txt p { margin-bottom: 24px;}
 .txt ul > li { position: relative; margin-bottom: 10px;  }
@@ -269,7 +267,7 @@ select {
 .header__bottom { padding: 24px 0 15px; }
 .logo__link { display: inline-block; margin-top: 10px;  }
 .header__phone { line-height: 1; white-space: nowrap; }
-.header__address { font-size: 13px; color: #58595b; }
+.header__address { font-size: 13px; color: #57585A; }
 .header__grey_line { background-color: #f7f6f5; line-height: 28px; margin-bottom: 12px;}
 .header__worktime { float: left; }
 .heder__worktime_title { font-size: 19px; font-weight: bold; color: #ef474e; }
@@ -402,12 +400,18 @@ select {
 .foto_cat__item_img { display: block; line-height: 1; border-radius: 8px; }
 .foto_cat__item_phone { display: inline-block;}
 
+.foto__list { margin-bottom: 42px;}
+.foto__item { margin-bottom: 17px;}
+.foto__item_img { display: block; line-height: 1; border-radius: 8px; }
 
 
-
-
-
-
+/*------Запись на прием-----*/
+.zapis {}
+.zapis_form .btn { margin-top: 14px; margin-left: 157px;}
+.zapis_form__cell { margin-bottom: 6px;}
+.zapis_form__cell_left.table-cell,
+.zapis_form__cell_right.table-cell { vertical-align: middle;}
+.zapis_form__cell_left { width: 157px; line-height: 1.2; }
 
 
 
