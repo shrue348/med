@@ -66,7 +66,7 @@ body:after{
 .off-2 { margin-left: 16.66666667%; }
 .off-1 { margin-left: 8.33333333%; }
 
-:hover, :hover * { t-webkit-ransition: all 0.15s ease; -webkit-transition: all 0.15s ease; transition: all 0.15s ease;}
+:hover, :hover * { t-webkit-ransition: all 0.15s ease; transition: all 0.15s ease;}
 :focus { outline: none !important;}
 a { color: #000;}
 a, button { cursor: pointer; text-decoration: none;}
@@ -92,8 +92,8 @@ hr {
 .valigntop { vertical-align: top !important;}
 .valignbottom { vertical-align: bottom !important;}
 .valignmiddle { vertical-align: middle !important;}
-.b, strong, b { }
-.i, em { }
+.b, strong, b { font-weight: bold; }
+.i, em { font-style: italic;}
 .absolute {position: absolute;}
 .relative {position: relative !important;}
 .radius {border-radius: 4px;}
@@ -169,7 +169,7 @@ h4, h5, h6, .h4, .h5, .h6 { margin-bottom: 10px; }
 .colorgrey {color: #57585A;}
 .colorlgrey {color: #999999;}
 .colorred {color: #ff020c;}
-.colorblue {color: #005191;}
+.colorblue {color: #5b8db7;}
 .colorlblue {color: #5b8db7;}
 .colorpink {color: #fa889f;}
 .colorgreen {color: #2D1618;}
@@ -193,8 +193,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
 input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea {
     box-sizing: border-box;
     -webkit-appearance: none;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"], input[type="url"]:focus, textarea:focus{
  
@@ -239,8 +238,7 @@ select {
     color: #fff;
     border-radius: 4px;
     padding: 0 17px;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
     box-sizing: border-box;
     background-color: #ee464e;
     text-align: center;
@@ -384,6 +382,7 @@ select {
 .dispanser__item_img_wrap:before { position: absolute; z-index: 1; bottom: 0; right: 0; color: #fff; content: 'Подробнее'; background-color: #fb5858; font-size: 14px; height: 22px; line-height: 22px; padding: 0 15px;}
 .dispanser__item_img { display: block; line-height: 1; margin-bottom: 2px;}
 .dispanser__item_title { padding: 10px; color: #5d8eb5; font-weight: bold; height: 55px;}
+.dispanser__item:hover .dispanser__item_title { text-decoration: underline;}
 .dispanser__item_location { padding: 0 10px 0 39px; font-size: 12px; position: relative; height: 46px;}
 .dispanser__item_location:before { position: absolute; z-index: 1; left: 10px; top: 0;}
 .dispanser__item_location.metro_purple:before { content: url(../img/metro_back_purple_ico.png);}
@@ -391,6 +390,11 @@ select {
 .dispanser__item_location.metro_blue:before { content: url(../img/metro_back_blue_ico.png);}
 .dispanser__item_location.metro_green:before { content: url(../img/metro_back_green_ico.png);}
 .dispanser__item_phone { padding: 0 10px 0 39px; font-size: 12px; font-weight: bold; margin-bottom: 10px;}
+
+.dispanser__zone { margin-bottom: 16px; border: 1px solid #c6c6c6; border-radius: 4px; padding: 25px 50px;}
+.dispanser__zone_title { font-weight: bold; font-style: 18px; margin-bottom: 15px;}
+.dispanser__zone_list { border-left: 1px solid #fc8888; padding-left: 15px;}
+.dispanser__zone_link:hover { text-decoration: underline;}
 
 
 /*-------Foto---------*/
@@ -411,6 +415,39 @@ select {
 .zapis_form__cell_left.table-cell,
 .zapis_form__cell_right.table-cell { vertical-align: middle;}
 .zapis_form__cell_left { width: 157px; line-height: 1.2; }
+
+
+/*------Вопрос-ответ-----------*/
+.qna {}
+.qna__list_item { margin-bottom: 19px;}
+.qna_item { border-radius: 8px; border: 1px solid #d7d7d7; box-sizing: border-box; padding-left: 90px; background: url(../img/qna_item.png) no-repeat scroll 23px 24px #f7f6f5;}
+.qna_item__q { padding: 23px 22px 17px; background-color: #5b8db7; color: #fff; }
+.qna_item__q_title { margin-bottom: 5px; font-size: 20px; text-transform: uppercase;}
+.qna_item__a { padding: 15px 22px 24px 0; color: #000;}
+.qna_item__a_title { margin-bottom: 10px; font-size: 20px; text-transform: uppercase; color: #5b8db7;}
+.qna_item__a_text { line-height: 1.2;}
+
+
+/*--------Вакансии------------*/
+.vacancy {}
+.vacancy__list_item { margin-bottom: 19px;}
+.vacancy_item { border-radius: 8px; border: 1px solid #d7d7d7; box-sizing: border-box; padding-left: 90px; background: url(../img/vacancy_item.png) no-repeat scroll 23px 24px #f7f6f5; padding: 25px 15px 25px 90px;}
+.vacancy_item__title { font-size: 26px; font-weight: bold; margin-bottom: 25px; color: #5b8db7;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
