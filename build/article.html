@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Express МедСервис</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/iconic.css">
+	<link rel="stylesheet" href="css/baguetteBox.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/ready.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<div class="header__top">
+		<div class="wrapper">
+			<div class="header__top_btns table table-fixed">
+				<a href="" class="header__btn table-cell">Услуги</a>
+				<a href="" class="header__btn table-cell">Лаборатория</a>
+				<a href="" class="header__btn table-cell">Косметология</a>
+				<div class="header__search header_search table-cell">
+					<form action="">
+						<div class="table">
+							<div class="table-cell"><input class="header_search__input" type="text" placeholder="Поиск"></div>
+							<div class="table-cell"><button class="header_search__submit"></button></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="wrapper">
+			<div class="row">
+				<div class="logo col-4">
+					<a href="/" class="logo__link">
+						<img src="img/logo.png" alt="Express МедСервис" class="logo__img">
+					</a>
+				</div>
+				<div class="header__logo col-4">
+					<div class="col-6">
+						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+						<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					</div>
+					<div class="col-6">
+						<div class="header__metro header__metro-red">Лесная</div>
+						<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
+					</div>
+				</div>
+				<div class="header__logo col-4">
+					<div class="col-6">
+						<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
+						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+						<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+					</div>
+					<div class="col-6">
+						<div class="header__metro header__metro-blue">Купчино</div>
+						<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__grey_line">
+		<div class="wrapper">
+			<div class="header__worktime">
+				<i class="icon-clock"></i>
+				<span class="heder__worktime_title">Режим работы:</span>
+				<span class="heder__worktime_desc">Пн-Пт: 10:00 - 20:00 | Сб: 10:00 - 19:00 | Вс: 11:00 - 17:00</span>
+			</div>
+			<div class="header__soc_icons">
+				<a href="" class="header__soc_icon"><i class="icon-instagram"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-facebook"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-vkontakte"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_menu">
+		<div class="wrapper">
+			<ul class="main_menu__list">
+				<li class="main_menu__item"><a href="" class="main_menu__link">О центре</a></li>
+				<li class="main_menu__item">
+					<a href="" class="main_menu__link">Услуги</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Корпоративным клиентам</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медкомиссии</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медецинские справки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медицинские анализы</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Вакцинация</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Гинекология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Рентгенология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Санитарные книжки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">УЗИ</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Стоматология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Профосмотры</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Функциональная диагностика</a></li>
+					</ul>
+				</li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Консультация врачей</a></li>
+				<li class="main_menu__item"><a href="price.html" class="main_menu__link">Цены</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Информация</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Статьи</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper">
+	<div class="breadcrumbs">
+		<a href="/" class="breadcrumbs__link">Главная</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<span class="breadcrumbs__item">Страница</span>
+	</div>
+
+	<div class="main_layout table">
+		<div class="table-cell left">
+			<ul class="left_menu">
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-kosmetologia">Косметология</a>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-medcomissii">Медкомиссии</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-spravki">Медецинские справки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-analizi">Медицинские анализы</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-vakcinacia">Вакцинация</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-ginekologia">Гинекология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-rentgenologia">Рентгенология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-sanknizki">Санитарные книжки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-uzi">УЗИ</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-stomatologia">Стоматология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-profosmotri">Профосмотры</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-func">Функциональная диагностика</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-voditel">Водительская медкомиссия</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-oruzie">Оружейная комиссия</a></li>
+			</ul>
+			<div class="last_news">
+				<div class="last_news__header">Полезные статьи</div>
+				<ul class="last_news__list">
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="table-cell center article">
+			<h1>Статьи</h1>
+
+			<div class="article_filter">
+				<div class="article_filter__title">Фильтр</div>
+				<div class="article_filter__form">
+					<form action="">
+						<div class="article_filter__form_list">
+							<label class="article_filter__form_item"><input type="checkbox"> гинеколог</label>
+							<label class="article_filter__form_item"><input type="checkbox"> справки</label>
+							<label class="article_filter__form_item"><input type="checkbox"> вакцинация</label>
+							<label class="article_filter__form_item"><input type="checkbox"> дерматовенеролог</label>
+							<label class="article_filter__form_item"><input type="checkbox"> невропатолог</label>
+							<label class="article_filter__form_item"><input type="checkbox"> санитарные книжки</label>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="article_list">
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+				<div class="article_list__item">
+					<img class="article_list__item_img" src="img/_article_item.png" alt="">
+					<a href="" class="article_list__item_title">Как отличить настоящую санитарную книжку от поддельной? </a>
+					<div class="article_list__item_desc">Личная медицинская (санитарная) книжка – официальный документ государственного образца, подтверждающий, что состояние здоровья работника соответствует его профессиональной сфере деятельности.</div>
+				</div>
+			</div>
+
+
+			<svg width="0" height="0">
+			  <clipPath id="article-svg">
+			    <polygon points="0 118,137 118,137 68,146 59,137 50,137 0,0 0"> 
+			    </polygon>
+			  </clipPath>
+			</svg>
+				
+		</div>
+	</div>
+</div>
+
+<div class="partners">
+	<div class="partners__header">
+		<div class="wrapper">Наши партнеры:</div>
+	</div>
+	<div class="partners__carousel">
+		<div class="wrapper">
+			<div class="partners__list row">
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="share">
+	<div class="wrapper">
+		<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+		<script src="//yastatic.net/share2/share.js"></script>
+		<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter="1"></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer__top">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-3">
+					<div class="footer__top_item footer__worktime">
+						<div class="mgb10">Режим работы</div>
+						Пн-Пт: 10:00 - 20:00<br>
+						Сб: 10:00 -19:00<br>
+						Вс: 11:00 - 17:00
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург,  Лесной проспект, дом 63,  лит.ера А, пом.ещение 1Н</div>
+						<div class="footer__phone mgb10">(812) 490-2295</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 740-1252</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург, улица Ярослава Гашека, дом 9 корпус 1</div>
+						<div class="footer__phone mgb10">(812) 778-9344 | (812) 380-4303</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 244-7097</div>
+					</div>
+				</div>
+				<div class="col-12"><a href="/sitemap/">Карта сайта</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="wrapper">
+			<div class="copy">© ООО «МедСервис» 2011-2017. Копирование и использование материалов с сайта запрещено.</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
