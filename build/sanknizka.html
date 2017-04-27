@@ -27,12 +27,14 @@
 		<div class="wrapper">
 			<div class="header__top_btns table table-fixed">
 				<a href="" class="header__btn table-cell">Услуги</a>
-				<a href="" class="header__btn table-cell active">Лаборатория</a>
+				<a href="" class="header__btn table-cell">Лаборатория</a>
 				<a href="" class="header__btn table-cell">Косметология</a>
 				<div class="header__search header_search table-cell">
 					<form action="">
-						<input class="header_search__input" type="text" placeholder="Поиск">
-						<button class="header_search__submit"></button>
+						<div class="table">
+							<div class="table-cell"><input class="header_search__input" type="text" placeholder="Поиск"></div>
+							<div class="table-cell"><button class="header_search__submit"></button></div>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -91,23 +93,36 @@
 	<div class="main_menu">
 		<div class="wrapper">
 			<ul class="main_menu__list">
-				<li class="main_menu__item"><a href="" class="main_menu__link">Анализы</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">О лаборатории</a></li>
-				<li class="main_menu__item"><a href="" class="main_menu__link">Контакты</a></li>
-				<li class="main_menu__item main_menu__item-search">
-					<form action="">
-						<input type="text" placeholder="Найти исследование по названию лил коду"><button></button>
-					</form>
+				<li class="main_menu__item"><a href="" class="main_menu__link">О центре</a></li>
+				<li class="main_menu__item">
+					<a href="" class="main_menu__link">Услуги</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Корпоративным клиентам</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медкомиссии</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медецинские справки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медицинские анализы</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Вакцинация</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Гинекология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Рентгенология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Санитарные книжки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">УЗИ</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Стоматология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Профосмотры</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Функциональная диагностика</a></li>
+					</ul>
 				</li>
-				<li class="main_menu__item main_menu__item-cart">
-					<a href=""></a>
-				</li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Консультация врачей</a></li>
+				<li class="main_menu__item"><a href="price.html" class="main_menu__link">Цены</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Информация</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Статьи</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<div class="wrapper lab">
+<div class="wrapper">
 	<div class="breadcrumbs">
 		<a href="/" class="breadcrumbs__link">Главная</a>
 		<i class="breadcrumbs__deliver icon-angle-right"></i>
@@ -118,84 +133,43 @@
 		<span class="breadcrumbs__item">Страница</span>
 	</div>
 
-	<div class="main_layout table ">
+	<div class="main_layout table">
 		<div class="table-cell left">
-			<div class="left_menu_research">
-				<div class="left_menu_research__title">Исследования</div>
-				<ul class="left_menu_research__list">
-					<li class="left_menu_research__item">
-						<a href="" class="left_menu_research__link">Микробиология</a>
-					</li>
-					<li class="left_menu_research__item active">
-						<a href="" class="left_menu_research__link">Аллергология</a>
-						<ul class="left_menu_research__sub">
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Пищевые аллергены</a>
-							</li>
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Бытовые аллергены</a>
-							</li>
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Аллергены пыльцы растений</a>
-							</li>
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Аллергены на животных</a>
-							</li>
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Комплексные аллергопанели</a>
-							</li>
-							<li class="left_menu_research__sub_item">
-								<a href="" class="left_menu_research__sub_link">Профессиональные аллергены</a>
-							</li>
-						</ul>
-					</li>
-					<li class="left_menu_research__item">
-						<a href="" class="left_menu_research__link">Биохимические исследования крови</a>
-					</li>
-					<li class="left_menu_research__item">
-						<a href="" class="left_menu_research__link">Биохимический анализ мочи</a>
-					</li>
-					<li class="left_menu_research__item">
-						<a href="" class="left_menu_research__link">Гастропанель</a>
-					</li>
-					<li class="left_menu_research__item">
-						<a href="" class="left_menu_research__link">Генетические исследования</a>
-					</li>
+			<ul class="left_menu">
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-kosmetologia">Косметология</a>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-medcomissii">Медкомиссии</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-spravki">Медецинские справки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-analizi">Медицинские анализы</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-vakcinacia">Вакцинация</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-ginekologia">Гинекология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-rentgenologia">Рентгенология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-sanknizki">Санитарные книжки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-uzi">УЗИ</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-stomatologia">Стоматология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-profosmotri">Профосмотры</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-func">Функциональная диагностика</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-voditel">Водительская медкомиссия</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link left_menu__link-oruzie">Оружейная комиссия</a></li>
+			</ul>
+			<div class="last_news">
+				<div class="last_news__header">Полезные статьи</div>
+				<ul class="last_news__list">
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="table-cell center ">
+		<div class="table-cell center sanknizka">
+			<h1>Часто задаваемые вопросы</h1>
 
-			<div class="research_list__item research_item ">
-				<div class="clear">
-					<div class="research_item__code">Код: 123456</div>
-					<div class="research_item__title">Название комплекса или исследования</div>
-				</div>
-				
-				<div class="research_item__desc mgb30">
-					<div class="inline-block">
-						<div class="mgb5"><span class="b">Биоматериал: </span>кровь</div>
-						<div class="mgb5"><span class="b">Срок: </span>2 дня</div>
-						<div class="mgb5"><span class="b">Подготовка: </span>утром натощак</div>
-					</div>
-					<div class="inline-block alignright">
-						<div class="research_item__price research_item__price-old"><span>2000</span> <span class="rub">Р</span></div>
-						<div class="research_item__price"><span>1000</span> <span class="rub">Р</span></div>
-					</div>
-					<div class="inline-block alignright">
-						<a href="" class="btn mgt35">+ Добавить в заказ</a>
-					</div>
-				</div>
-
-				<div class="txt">
-					<h2>Описание</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
-					<h2>Интерпретация</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
-					<h2>Метод анализа</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
-				</div>
-			</div>
+		
 		</div>
 	</div>
 </div>

@@ -324,6 +324,11 @@ select {
 .header__metro-blue { color: #5b8db7;}
 .header__metro-blue:before { content: url(../img/metro_blue_ico.png); position: absolute; left: 0; top: 0;}
 
+.header__loc-les, .header__loc-kup { position: relative;}
+.header__loc-les:before { position: absolute; content: ''; margin: auto; left: 0; top: 20px; height: 40px; border-left: 1px solid #F7A2A7;}
+.header__loc-kup:before { position: absolute; content: ''; margin: auto; left: 0; top: 20px; height: 40px; border-left: 1px solid #A5C1D7;}
+
+
 .footer__top { color: #fff; background-color: #929396; padding: 30px 0 10px; font-size: 14.5px;}
 .footer__top a { color: #fff;  }
 .footer__top_item { padding-left: 30px; margin-bottom: 15px; position: relative;}
@@ -500,7 +505,7 @@ select {
 
 .price_accordion { border-top: 1.5px dashed #939598; }
 .price_accordion:last-child { border-bottom: 1.5px dashed #939598; }
-.price_accordion__header {  display: block; padding: 6px; font-size: 18px; color: #5b8db7; border: 2px solid transparent;  }
+.price_accordion__header {  display: block; padding: 6px; font-size: 18px; color: #5b8db7; border: 2px solid transparent; margin-top: -1px; }
 .price_accordion__header:not(.collapsed) { border: 2px solid #5b8db7; }
 
 
@@ -544,10 +549,6 @@ select {
 
 
 
-
-
-
-
 /*-------Лаборатория------------*/
 .main_layout.lab_layout { margin-top: 14px;}
 .left_menu_research { border: 1px solid #d4d5d6; margin-bottom: 30px;}
@@ -578,6 +579,106 @@ select {
 .research_item__price { font-size: 34px; color: #ee464e; line-height: 1.1;}
 .research_item__price-old { color: #5b8db7;}
 .research_item__price-old > span:first-child { text-decoration: line-through;}
+
+.research_item__desc { white-space: nowrap;}
+.research_item__desc > .inline-block:nth-child(1) { width: 33.33%}
+.research_item__desc > .inline-block:nth-child(2) { width: 33.33%}
+.research_item__desc > .inline-block:nth-child(3) { width: 33.33%}
+
+
+
+
+/*--------Контакты--------*/
+.contacts_item__map { margin-bottom: 20px; height: 393px;}
+.contacts_desc__title { font-size: 20px; font-weight: bold; margin-bottom: 20px; color: #5b8db7;}
+.contacts_desc__title-min { font-size: 18px; margin-bottom: 15px; color: #5b8db7;}
+.contacts_desc__item { font-size: 14px; line-height: 1.2; margin-bottom: 40px;}
+
+.contacts_form { margin-bottom: 30px; font-size: 16px; color: #000; border-bottom: 1px solid #e1e1e1;}
+.contacts_form__title { font-size: 18px; color: #5b8db7; margin-bottom: 15px;}
+.contacts_form__radio { padding: 10px 15px; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1; }
+.contacts_form__fields { padding: 10px 15px; background-color: #f7f5f4;}
+.contacts_form label { display: block; margin-bottom: 5px}
+.contacts_form .form_field { margin-bottom: 15px;}
+.contacts_form__btn_wrap { padding: 10px 15px;}
+
+.contacts_rasp__table { font-size: 20px; line-height: 1.2; margin: 15px 0; color: #000;}
+.contacts_rasp__table td { padding: 5px 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
