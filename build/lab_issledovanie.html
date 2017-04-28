@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Express МедСервис</title>
-	
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 	<link rel="stylesheet" href="css/reset.css">
@@ -46,27 +46,29 @@
 						<img src="img/logo.png" alt="Express МедСервис" class="logo__img">
 					</a>
 				</div>
-				<div class="header__loc-les col-4">
-					<div class="col-6">
-						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
-						<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
-						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+				<div class="header__loc_wrap col-8 row">
+					<div class="header__loc-les col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-red">Лесная</div>
+							<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
+						</div>
 					</div>
-					<div class="col-6">
-						<div class="header__metro header__metro-red">Лесная</div>
-						<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
-					</div>
-				</div>
-				<div class="header__loc-kup col-4">
-					<div class="col-6">
-						<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
-						<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
-						<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
-						<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
-					</div>
-					<div class="col-6">
-						<div class="header__metro header__metro-blue">Купчино</div>
-						<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+					<div class="header__loc-kup col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-blue">Купчино</div>
+							<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -90,17 +92,31 @@
 
 	<div class="main_menu">
 		<div class="wrapper">
-			<ul class="main_menu__list">
-				<li class="main_menu__item"><a href="" class="main_menu__link">Анализы</a></li>
+			<ul class="main_menu__list clear">
+				<li class="main_menu__item">
+					<a href="" class="main_menu__link">Анализы</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Пункт меню</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Пункт меню</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Пункт меню</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Пункт меню</a></li>
+					</ul>
+				</li>
 				<li class="main_menu__item"><a href="" class="main_menu__link">О лаборатории</a></li>
 				<li class="main_menu__item"><a href="" class="main_menu__link">Контакты</a></li>
 				<li class="main_menu__item main_menu__item-search">
-					<form action="">
-						<input type="text" placeholder="Найти исследование по названию лил коду"><button></button>
-					</form>
-				</li>
-				<li class="main_menu__item main_menu__item-cart">
-					<a href=""></a>
+					<div class="table">
+						<div class="table-cell main_menu__search_cell">
+							<form action="">
+								<input type="text" placeholder="Найти исследование по названию лил коду"><button></button>
+							</form>
+						</div>
+						<div class="table-cell">
+							<span class="main_menu__item-cart">
+								<a href=""></a>
+							</span>
+						</div>
+					</div>	
 				</li>
 			</ul>
 		</div>

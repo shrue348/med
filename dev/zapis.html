@@ -1,6 +1,6 @@
 //= _header.html
 
-<div class="wrapper">
+<div class="wrapper recording">
 	//= _breadcrumbs.html
 
 	<div class="main_layout table">
@@ -8,7 +8,7 @@
 			//= _left_menu.html
 			//= _last_news.html
 		</div>
-		<div class="table-cell center recording">
+		<div class="table-cell center ">
 			<h1>Запись на прием</h1>
 
 			<div class="txt">
@@ -40,31 +40,45 @@
 					<label class="zapis_form__cell table">
 						<span class="zapis_form__cell_left table-cell">Дата рождения</span>
 						<span class="zapis_form__cell_right table-cell">
-							<input type="text" >
+							<input type="text" class="datepicker">
 						</span>
-						<span class="zapis_form__cell_calendar table-cell"></span>
+						<span class="zapis_form__cell_calendar table-cell">
+							<img src="img/calendar_ico.png" alt="Календарь" class="calendar">
+						</span>
 					</label>
 					<label class="zapis_form__cell table">
 						<span class="zapis_form__cell_left table-cell">Желаемая дата</span>
 						<span class="zapis_form__cell_right table-cell">
-							<input type="text" >
+							<input type="text" class="datepicker">
 						</span>
-						<span class="zapis_form__cell_calendar table-cell"></span>
+						<span class="zapis_form__cell_calendar table-cell">
+							<img src="img/calendar_ico.png" alt="Календарь" class="calendar">
+						</span>
 					</label>
 					<label class="zapis_form__cell table">
 						<span class="zapis_form__cell_left table-cell">Укажите врача / <br>тип услуги</span>
 						<span class="zapis_form__cell_right table-cell">
-							<select name="" id="">
+							<select >
 								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
+								<option value="">Водительская комиссия</option>
+								<option value="">Оружейная комиссия</option>
+								<option value="">Водительская комиссия</option>
+								<option value="">Оружейная комиссия</option>
+								<option value="">Водительская комиссия</option>
+								<option value="">Оружейная комиссия</option>
 							</select>
 						</span>
 					</label>
 					<label class="zapis_form__cell table">
 						<span class="zapis_form__cell_left table-cell">Желаемое время</span>
 						<span class="zapis_form__cell_right table-cell">
-							<input type="text" >
+							<select >
+								<option value=""></option>
+								<option value="">Не имеет значения</option>
+								<option value="">Утром</option>
+								<option value="">Днем</option>
+								<option value="">Вечером</option>
+							</select>
 						</span>
 					</label>
 					<label class="zapis_form__cell table">
