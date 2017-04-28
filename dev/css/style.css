@@ -440,7 +440,7 @@ select {
 .dispanser__cost:before { position: absolute; left: 0; top: 0; content: url(../img/wallet_ico.png);}
 .dispanser__cost_num { color: #ee464e; font-size: 24px; font-weight: bold;}
 .dispanser__desc { font-size: 14px;}
-.dispanser__map { margin-bottom: 20px; height: 357px;}
+.dispanser__map { margin-bottom: 20px;}
 
 .dispanser__list.row > .col-4:nth-child(3n+1) { clear: left;}
 .dispanser__item { border: 1px solid #e2e2e2; border-radius: 2px; font-size: 14px; margin-bottom: 18px; border-bottom-color: #c6c6c6;}
