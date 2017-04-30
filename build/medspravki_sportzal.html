@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Express МедСервис</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/iconic.css">
+	<link rel="stylesheet" href="css/baguetteBox.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/ready.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<div class="header__top">
+		<div class="wrapper">
+			<div class="header__top_btns table table-fixed">
+				<a href="" class="header__btn table-cell">Услуги</a>
+				<a href="" class="header__btn table-cell active">Лаборатория</a>
+				<a href="" class="header__btn table-cell">Косметология</a>
+				<div class="header__search header_search table-cell">
+					<form action="">
+						<input class="header_search__input" type="text" placeholder="Поиск">
+						<button class="header_search__submit"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="wrapper">
+			<div class="row">
+				<div class="header__logo logo col-4">
+					<a href="/" class="logo__link">
+						<img src="img/logo.png" alt="Express МедСервис" class="logo__img">
+					</a>
+				</div>
+				<div class="header__loc_wrap col-8 row">
+					<div class="header__loc-les col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-red">Лесная</div>
+							<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
+						</div>
+					</div>
+					<div class="header__loc-kup col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-blue">Купчино</div>
+							<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__grey_line">
+		<div class="wrapper">
+			<div class="header__worktime">
+				<i class="icon-clock"></i>
+				<span class="heder__worktime_title">Режим работы:</span>
+				<span class="heder__worktime_desc">Пн-Пт: 10:00 - 20:00 | Сб: 10:00 - 19:00 | Вс: 11:00 - 17:00</span>
+			</div>
+			<div class="header__soc_icons">
+				<a href="" class="header__soc_icon"><i class="icon-instagram"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-facebook"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-vkontakte"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_menu">
+		<div class="wrapper">
+			<ul class="main_menu__list clear">
+				<li class="main_menu__item"><a href="" class="main_menu__link">О центре</a></li>
+				<li class="main_menu__item">
+					<a href="uslugi.html" class="main_menu__link">Услуги</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Корпоративным клиентам</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медкомиссии</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медецинские справки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медицинские анализы</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Вакцинация</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Гинекология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Рентгенология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Санитарные книжки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">УЗИ</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Стоматология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Профосмотры</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Функциональная диагностика</a></li>
+					</ul>
+				</li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Консультация врачей</a></li>
+				<li class="main_menu__item"><a href="price.html" class="main_menu__link">Цены</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Информация</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Статьи</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper">
+	<div class="breadcrumbs">
+		<a href="/" class="breadcrumbs__link">Главная</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<span class="breadcrumbs__item">Страница</span>
+	</div>
+
+	<div class="main_layout table">
+		<div class="table-cell left">
+			<ul class="left_menu clear">
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_1_ico.png" alt="Косметология">Косметология</a>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_2_ico.png" alt="Медкомиссии">Медкомиссии</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_3_ico.png" alt="Медецинские справки">Медецинские справки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_4_ico.png" alt="Медицинские анализы">Медицинские анализы</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_5_ico.png" alt="Вакцинация">Вакцинация</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_6_ico.png" alt="Эндокринолог">Эндокринолог</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_7_ico.png" alt="Санитарные">Санитарные книжки</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_8_ico.png" alt="УЗИ">УЗИ</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_9_ico.png" alt="Консультация врачей">Консультация врачей</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_10_ico.png" alt="Гинекология">Гинекология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_11_ico.png" alt="Рентгенология">Рентгенология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_12_ico.png" alt="Стоматология">Стоматология</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_13_ico.png" alt="Профосмотры">Профосмотры</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_14_ico.png" alt="Функциональная диагностика">Функциональная диагностика</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_15_ico.png" alt="Водительская медкомиссия">Водительская медкомиссия</a></li>
+				<li class="left_menu__item"><a href="" class="left_menu__link"><img src="img/left_menu_16_ico.png" alt="Оружейная комиссия">Оружейная комиссия</a></li>
+			</ul>
+			<div class="last_news">
+				<div class="last_news__header">Полезные статьи</div>
+				<ul class="last_news__list">
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Правила подготовки к УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Диагностика УЗИ</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">УЗИ при беременности</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="table-cell center article">
+			<p>
+				<img src="img/_spravki_action.jpg" alt="">
+			</p>
+			<h1>Справка в спортзал</h1>
+
+			<div class="txt">
+				<img src="img/_spravka_v_sportzal.jpg" alt="" style="float: left; margin-right: 10px; margin-bottom: 10px;">
+
+				<p>Физические нагрузки оказывают на организм человека благотворное влияние: они укрепляют мышцы и способствуют улучшению кровоснабжения внутренних органов. Однако необходимо помнить о том, что у занятий спортом имеется ряд противопоказаний. Отсутствие у человека подобных ограничений подтверждают соответствующие медицинские документы: медицинская справка в тренажерный зал, справка в спортзал и медсправка для посещения спортивных секций.</p>
+
+				<h2>Что такое справка в спортзал?</h2>
+				<p>Медицинская справка в спортзал представляет собой врачебное заключение об отсутствии каких-либо противопоказаний к занятиям спортом. Медсправка для посещения спортивных секций является аналогом оформления медицинской справки для бассейна. Единственное отличие состоит в том, что для нее не нужно сдавать анализы и соскобы.</p>
+
+				<h2>Противопоказания к занятиям спортом</h2>
+				<p>Противопоказания для занятий физическими нагрузками могут быть абсолютными и относительными. Абсолютные противопоказания предполагают полное отсутствие физических упражнений. Имея относительные противопоказания, человек может заниматься отдельными видами спорта, соблюдая некоторые предосторожности. И в том, и в другом случае разрешить либо запретить занятия определенными видами спорта и выдать справку для спортзала имеет право только врач.</p>
+
+				<h2>Где получить справку?</h2>
+				<p>Если вы хотите купить справку в спортзал без посещения соответствующих специалистов, это противозаконно. Делать это не рекомендуется еще и потому, что у вас могут иметься определенные противопоказания, так что нужно непременно обратиться в специализированные медучреждения. Получить данный документ жители Санкт-Петербурга могут в медицинских центрах "ЭкспрессМедСервис". Здесь в короткие сроки можно пройти все необходимые осмотры для получения справки в спортзал установленного образца.</p>
+
+				<h2 class="colorred">Рекомендуем ознакомится с Правилами подготовки к профосмотру</h2>
+			</div>
+
+			<img class="mgb20" src="img/medspravki_banner.png" alt="Предрейсовый и послерейсовый осмотр">
+			<div class="alignright mgb30">
+				<a class="btn btn_blue" href="">Образец</a>
+			</div>
+
+			<div class="medspravki_table__wrap">
+				<div class="medspravki_table__title">Стоимость справки для спортивного зала</div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Наименование услуги</td>
+							<td>Цена</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Заключение Терапевта</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>Заключение Терапевта</td>
+							<td>200</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Итого:</td>
+							<td>400</td>
+						</tr>
+						<tr>
+							<td class="colorred">Акция:</td>
+							<td class="colorred">300</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="partners">
+	<div class="partners__header">
+		<div class="wrapper">Наши партнеры:</div>
+	</div>
+	<div class="partners__carousel">
+		<div class="wrapper">
+			<div class="partners__list row">
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="share">
+	<div class="wrapper">
+		<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+		<script src="//yastatic.net/share2/share.js"></script>
+		<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter="1"></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer__top">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-3">
+					<div class="footer__top_item footer__worktime">
+						<div class="mgb10">Режим работы</div>
+						Пн-Пт: 10:00 - 20:00<br>
+						Сб: 10:00 -19:00<br>
+						Вс: 11:00 - 17:00
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург,  Лесной проспект, дом 63,  лит.ера А, пом.ещение 1Н</div>
+						<div class="footer__phone mgb10">(812) 490-2295</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 740-1252</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург, улица Ярослава Гашека, дом 9 корпус 1</div>
+						<div class="footer__phone mgb10">(812) 778-9344 | (812) 380-4303</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 244-7097</div>
+					</div>
+				</div>
+				<div class="col-12"><a href="/sitemap/">Карта сайта</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="wrapper">
+			<div class="copy">© ООО «МедСервис» 2011-2017. Копирование и использование материалов с сайта запрещено.</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

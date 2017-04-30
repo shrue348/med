@@ -30,6 +30,13 @@ $(function(){
 		]
 	});
 
+
+	$('.service_slider').slick({
+		dots: true,
+		slidesToShow: 1
+	})
+
+
 	baguetteBox.run('.baguetteBox');
 
 	
