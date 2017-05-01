@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Express МедСервис</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/iconic.css">
+	<link rel="stylesheet" href="css/baguetteBox.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/ready.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<div class="header__top">
+		<div class="wrapper">
+			<div class="header__top_btns table table-fixed">
+				<a href="" class="header__btn table-cell">Услуги</a>
+				<a href="" class="header__btn table-cell active">Лаборатория</a>
+				<a href="" class="header__btn table-cell">Косметология</a>
+				<div class="header__search header_search table-cell">
+					<form action="">
+						<input class="header_search__input" type="text" placeholder="Поиск">
+						<button class="header_search__submit"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="wrapper">
+			<div class="row">
+				<div class="header__logo logo col-4">
+					<a href="/" class="logo__link">
+						<img src="img/logo.png" alt="Express МедСервис" class="logo__img">
+					</a>
+				</div>
+				<div class="header__loc_wrap col-8 row">
+					<div class="header__loc-les col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-red">Лесная</div>
+							<div class="header__address">Лесной пр.,  д. 63, <br>лит.  А, пом. 1Н</div>
+						</div>
+					</div>
+					<div class="header__loc-kup col-6">
+						<div class="col-6">
+							<a href="tel:+78124902295" class="header__phone font20 colorlblue">(812) 490-22-95</a><br>
+							<a href="tel:+78124902295" class="header__phone font20 colorred">(812) 490-22-95</a><br>
+							<span class="font12 colorgrey nowrap">По вопросам санкнижек:</span><br>
+							<a href="tel:+78127401252" class="header__phone font20 colorgrey">(812) 740-12-52</a>
+						</div>
+						<div class="col-6">
+							<div class="header__metro header__metro-blue">Купчино</div>
+							<div class="header__address">ул. Ярослава Гашека, <br>д. 9,  кор. 1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__grey_line">
+		<div class="wrapper">
+			<div class="header__worktime">
+				<i class="icon-clock"></i>
+				<span class="heder__worktime_title">Режим работы:</span>
+				<span class="heder__worktime_desc">Пн-Пт: 10:00 - 20:00 | Сб: 10:00 - 19:00 | Вс: 11:00 - 17:00</span>
+			</div>
+			<div class="header__soc_icons">
+				<a href="" class="header__soc_icon"><i class="icon-instagram"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-facebook"></i></a>
+				<a href="" class="header__soc_icon"><i class="icon-vkontakte"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_menu">
+		<div class="wrapper">
+			<ul class="main_menu__list clear">
+				<li class="main_menu__item"><a href="" class="main_menu__link">О центре</a></li>
+				<li class="main_menu__item">
+					<a href="uslugi.html" class="main_menu__link">Услуги</a>
+					<ul class="main_menu__sub">
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Корпоративным клиентам</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медкомиссии</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медецинские справки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Медицинские анализы</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Вакцинация</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Гинекология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Рентгенология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Санитарные книжки</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">УЗИ</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Стоматология</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Профосмотры</a></li>
+						<li class="main_menu__sub_item"><a href="" class="main_menu__sub_link">Функциональная диагностика</a></li>
+					</ul>
+				</li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Консультация врачей</a></li>
+				<li class="main_menu__item"><a href="price.html" class="main_menu__link">Цены</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Акции</a></li>
+				<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Информация</a></li>
+				<li class="main_menu__item"><a href="" class="main_menu__link">Статьи</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper ">
+	<div class="breadcrumbs">
+		<a href="/" class="breadcrumbs__link">Главная</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<a href="/" class="breadcrumbs__link">Крошка</a>
+		<i class="breadcrumbs__deliver icon-angle-right"></i>
+		<span class="breadcrumbs__item">Страница</span>
+	</div>
+
+	<div class="main_layout table">
+		<div class="table-cell left">
+			<div class="last_news">
+				<div class="last_news__header">Услуги</div>
+				<ul class="last_news__list">
+					<li class="last_news__item"><a href="" class="last_news__link">Санкнижка для организаций без паспорта здоровья</a></li>
+					<li class="last_news__item"><a href="" class="last_news__link">Санкнижка для организаций с паспортом здоровья</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="table-cell center ">
+			<h1>Санкнижки для организаций</h1>
+
+			<img class="mgb30" src="img/_sanknizki_baner.png" alt="Санкнижки для организаций">
+
+			<h2 class="main_h1 mgb0">Основные преимущества сотрудничества с нами:</h2>
+			<div class="corp_preim corp_preim-inside row">
+				<div class="corp_preim__item col-4">
+					<img src="img/corp_preim_4_ico.png" alt="Доставка медкнижек" class="corp_preim__item_img">
+					<div class="corp_preim__item_title">Доставка медкнижек</div>
+					<div class="corp_preim__item_desc">Уже при небольших объемах, всем юридическим лицам мы доставляем медицинские книжки на указанный адрес, сводя посещение нашего центра работниками к минимуму.</div>
+				</div>
+				<div class="corp_preim__item col-4">
+					<img src="img/corp_preim_5_ico.png" alt="Проверка медкнижек" class="corp_preim__item_img">
+					<div class="corp_preim__item_title">Проверка медкнижек</div>
+					<div class="corp_preim__item_desc">Наши компетенции позволяют провести аудит уже существующих медицинских книжек Ваших работников и выявить подделки, минимизировав проблемы при проверках.</div>
+				</div>
+				<div class="corp_preim__item col-4">
+					<img src="img/corp_preim_6_ico.png" alt="ПО для учёта" class="corp_preim__item_img">
+					<div class="corp_preim__item_title">ПО для учёта</div>
+					<div class="corp_preim__item_desc">Всем клиентам по запросу мы бесплатно предоставляем собственное программное обеспечение для учёта и бюджетирования сферы медосмотров Ваших сотрудников.</div>
+				</div>
+			</div>
+
+			<div class="main_h1 b i colorblue mgb15">Каждый работник вашего предприятия имеет официальную санитарную книжку?</div>
+			<div class="aligncenter colorgrey mgb40">
+				<p>Мы готовы обеспечить полноту и правильность оформления необходимой документации. Поручите нам заботу о выдаче и продлении санитарных книжек, и мы тщательно проконтролируем и засвидетельствуем состояние здоровья вашего персонала!</p>
+				<p>Наши возможности позволяют в кратчайшие сроки провести полный и всесторонний осмотр работника.</p>
+			</div>
+
+
+			<div class="aligncenter colorgrey mgb40">
+				<p>Предлагая предприятиям и организациям тесное и плодотворное сотрудничество, мы стремимся к взаимной выгоде. Цены на обслуживание устанавливаются индивидуально для каждого корпоративного клиента. Заключив договор о выдаче и продлении срока действия санитарных книжек, вы можете рассчитывать на скидку, а сотрудники вашей компании – на полноценное освидетельствование и грамотное заполнение документов высококвалифицированными специалистами нашего центра!</p>
+			</div>
+
+
+			<h2 class="main_h1 mgb0">Форма обратной связи:</h2>
+			<div class="corp_txt txt mgb30">
+				<p style="text-align: center;">Получить официальное предложение на максимально выгодные условия на наши услуги Вы можете, заполнив и отправив ниже представленную форму обратной связи. Для ориентира можно связаться предварительно с нами по телефонам, указанным в разделе контакты.</p>
+			</div>
+			<div class="corp_form form">
+				<form action="">
+					<div class="row">
+						<div class="col-6">
+							<div class="field">
+								<input type="text" placeholder="Название организации">
+							</div>
+							<div class="field">
+								<input type="text" placeholder="Имя и Отчество">
+							</div>
+							<div class="field">
+								<input type="text" placeholder="Должность">
+							</div>
+							<div class="field">
+								<input type="text" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="field">
+								<input type="text" placeholder="ИНН организации">
+							</div>
+							<div class="field">
+								<input type="email" placeholder="Почта">
+							</div>
+							<div class="field">
+								<textarea rows="3" placeholder="Описание и объем услуг"></textarea>
+							</div>
+							<button class="btn">Отправить запрос</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+			<h2 class="main_h1 ">Калькулятор санитарной книжки:</h2>
+			<div class="txt">
+				<p>Для расчета конечной стоимости санитарной книжки Вы можете воспользоваться онлайн-калькулятором. Расчет стоимости происходит автоматически, ниже можно выбрать необходимый тип санитарной книжки:</p>
+			</div>
+
+			<div class="sanknizka_calc__price">
+				<div class="sanknizka_calc__price_top">Итого:</div>
+				<div class="sanknizka_calc__price_bottom">2 000 <span class="rub">Р</span></div>
+			</div>
+
+			<div class="sanknizka_calc sanknizka_calc-dark">
+				<label class="sanknizka_calc__item">
+					<input type="radio"> Оформление новой санитарной книжки (по акции)
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio"> Продление действующей санитарной книжки
+				</label>
+			</div>
+
+			<h3>Оформление новой санитарной книжки (по акции)</h3>
+			<div class="sanknizka_calc">
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для медсотрудников со средним специальным образованием, ассистентов стоматологов и врачей стоматологов
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для работников водолечебниц и бассейнов
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для работников дошкольных образовательных организаций всех типов
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для работников образовательных организаций всех типов и видов
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для работников пищеблоков детских образовательных учреждений, организаций всех типов
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для работников пищевой промышленности, предприятий общественного питания
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для сотрудников коммунального хозяйства
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для сотрудников общежитий и гостиниц , проводников и стюардесс железнодорожных перевозок
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для сотрудников предприятий бытового обслуживания
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для сотрудников промышленной торговли
+				</label>
+			</div>
+
+
+
+			<h2>Паспорт здоровья</h2>
+			<div class="sanknizka_calc sanknizka_calc-dark">
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для женщин до 40 лет
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для женщин после 40 лет
+				</label>
+				<label class="sanknizka_calc__item">
+					<input type="radio">Для мужчин
+				</label>
+			</div>
+
+
+			<h3>Для женщин до 40 лет</h3>
+
+			<table class="price_table">
+				<tbody>
+					<tr><td>Наименование</td><td>Цена</td></tr>
+					<tr><td><label><input type="checkbox"> Электрокардиограмма</label></td><td>150</td></tr>
+					<tr><td><label><input type="checkbox"> Клинический анализ крови</label></td><td>150</td></tr>
+					<tr><td><label><input type="checkbox"> Общий анализ мочи</label></td><td>150</td></tr>
+					<tr><td><label><input type="checkbox"> Исследование уровня холестерина в крови</label></td><td>150</td></tr>
+					<tr><td><label><input type="checkbox"> Исследование уровня глюкозы в крови</label></td><td>150</td></tr>
+					<tr><td><label><input type="checkbox"> Заключение гинеколога <br>(Цитологическое исследование мазков <br>из цервикального канала шейки матки)</label></td><td>150</td></tr>
+				</tbody>
+
+			</table>
+
+		</div>
+	</div>
+</div>
+
+<div class="partners">
+	<div class="partners__header">
+		<div class="wrapper">Наши партнеры:</div>
+	</div>
+	<div class="partners__carousel">
+		<div class="wrapper">
+			<div class="partners__list row">
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_1.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_2.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_3.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_4.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_5.png" alt=""></div>
+				<div class="partners__item"><img src="img/partner_6.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="share">
+	<div class="wrapper">
+		<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+		<script src="//yastatic.net/share2/share.js"></script>
+		<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter="1"></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer__top">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-3">
+					<div class="footer__top_item footer__worktime">
+						<div class="mgb10">Режим работы</div>
+						Пн-Пт: 10:00 - 20:00<br>
+						Сб: 10:00 -19:00<br>
+						Вс: 11:00 - 17:00
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург,  Лесной проспект, дом 63,  лит.ера А, пом.ещение 1Н</div>
+						<div class="footer__phone mgb10">(812) 490-2295</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 740-1252</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="footer__top_item footer__location">
+						<div class="mgb10">Санкт-Петербург, улица Ярослава Гашека, дом 9 корпус 1</div>
+						<div class="footer__phone mgb10">(812) 778-9344 | (812) 380-4303</div>
+						<div class="mgb10">По вопросам санитарных книжек</div>
+						<div class="footer__phone mgb10">(812) 244-7097</div>
+					</div>
+				</div>
+				<div class="col-12"><a href="/sitemap/">Карта сайта</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="wrapper">
+			<div class="copy">© ООО «МедСервис» 2011-2017. Копирование и использование материалов с сайта запрещено.</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
