@@ -98,7 +98,7 @@ body:after{
 .off-2 { margin-left: 16.66666667%; }
 .off-1 { margin-left: 8.33333333%; }
 
-:hover, :hover * { t-webkit-ransition: all 0.15s ease; -webkit-transition: all 0.15s ease; transition: all 0.15s ease;}
+:hover, :hover * { t-webkit-ransition: all 0.15s ease; transition: all 0.15s ease;}
 :focus { outline: none !important;}
 a { color: #000;}
 a, button { cursor: pointer; text-decoration: none;}
@@ -107,7 +107,7 @@ a, button { cursor: pointer; text-decoration: none;}
 p {margin-bottom: 15px;}
 img { max-width: 100%; max-height: 100%;}
 hr {
-    background-color: transparent;
+    background-color: #a7a9ac;
     border: medium none;
     height: 1px;
     margin-bottom: 20px;
@@ -238,8 +238,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
 input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea {
     box-sizing: border-box;
     -webkit-appearance: none;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"], input[type="url"]:focus, textarea:focus{
  
@@ -304,8 +303,7 @@ select {
     color: #fff;
     border-radius: 4px;
     padding: 0 17px;
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    transition: all 0.2s ease;
     box-sizing: border-box;
     background-color: #ee464e;
     text-align: center;
@@ -405,7 +403,7 @@ select {
 .left_menu__item { border-top: 1px dashed #959595; font-size: 20px; line-height: 1.1;  position: relative;}
 .left_menu__item:last-child { border-bottom: 1px dashed #959595;}
 
-.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; -webkit-transition: all 0s linear; transition: all 0s linear; padding: 5px;}
+.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; transition: all 0s linear; padding: 5px;}
 
 
 .left_menu__link { position: relative; padding: 32px 0; display: block;}
@@ -791,6 +789,74 @@ select {
 
 
 
+.corp_left_menu__item { margin-bottom: 35px;}
+.corp_left_menu__link { font-size: 18px; color: #58595b; border: 1px solid #d8d9da; padding: 5px 10px 5px 65px; display: block; margin-left: 30px; position: relative;}
+.corp_left_menu__link.active, .corp_left_menu__link:hover { color: #fff; background-color: #ee464e; border-color: #ee464e;}
+.corp_left_menu__link:before { position: absolute; z-index: 1; left: -30px; top: -10px;}
+.corp_left_menu__link-med:before { content: url(../img/corp_left_menu_1_ico.png);}
+.corp_left_menu__link-san:before { content: url(../img/corp_left_menu_2_ico.png);}
+.corp_left_menu__link-qna:before { content: url(../img/corp_left_menu_3_ico.png);}
+.corp_left_menu__sub { border: 1px solid #d8d9da; padding: 20px 20px 5px 64px; border-top: none; margin-left: 30px}
+.corp_left_menu__sub > li { display: block; margin-bottom: 15px; position: relative;}
+.corp_left_menu__sub > li:before { 
+    background-color: #ee464e;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: -10px;
+    position: absolute;
+    top: 8px;
+    width: 5px;
+    z-index: 1;
+}
+.corp_left_menu__sub > li > a:hover { text-decoration: underline;}
+
+.prof_preim .col-6:nth-child(2n+1) { clear: left;}
+.prof_preim_ico { color: #5b8db7; border: 2px solid #5b8db7; border-radius: 30px; width: 32px; height: 32px; line-height: 32px; margin: 0 auto 10px; text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -821,8 +887,7 @@ select {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .15s linear;
-          transition: opacity .15s linear;
+  transition: opacity .15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -837,10 +902,7 @@ select {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-          transition-duration: .35s;
-  -webkit-transition-property: height, visibility;
-          transition-property: height, visibility;
+  transition-timing-function: ease;
+  transition-duration: .35s;
+  transition-property: height, visibility;
 }
