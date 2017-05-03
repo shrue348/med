@@ -31,10 +31,7 @@ $(function(){
 	});
 
 
-	$('.service_slider').slick({
-		dots: true,
-		slidesToShow: 1
-	})
+	$('.service_slider').slick()
 
 
 	baguetteBox.run('.baguetteBox');

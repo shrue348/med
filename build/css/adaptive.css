@@ -40,6 +40,10 @@
 	.service_slider .slick-dots { left: auto; right: 28px; bottom: 28px; }
 	.preim_block { height: auto; }
 
+	.contacts_form__radio .col-6 { width: 100%; margin-bottom: 5px;}
+	.contacts_form__radio .col-6:last-child { margin-bottom: 0;}
+	.contacts_form__fields .col-6 { width: 100%; }
+
 }
 			 
 /*767*/		@media (max-width: 767px) {
@@ -123,6 +127,10 @@
 	.sanknizka_form__top  img,
 	.sanknizka_form__bottom  img { display: none; }
 	.sanknizka_form .btn { position: relative; }
+
+	.contacts_form__radio .col-6 { width: 100%; margin-bottom: 5px;}
+	.contacts_form__radio .col-6:last-child { margin-bottom: 0;}
+	.contacts_form__fields .col-6 { width: 100%; }
 
 	
 }
@@ -229,7 +237,7 @@
 	.left_menu__item { display: block; width: 50%; float: left; }
 	.left_menu__item:nth-child(2n+1) { clear: left; }
 	.left_menu__item:nth-last-child(2) { border-bottom: 1px dashed #959595;}
-	.left_menu__link { padding-left: 65px; padding-right: 20px; font-size: 15px; height: 33px; display: table-cell; vertical-align: middle;}
+	.left_menu__link { padding-left: 65px; padding-right: 20px; font-size: 15px; }
 	.left_menu__link > img { left: 0; }
 
 	.dispanser__list.row > .col-4 { width: 50%; }
