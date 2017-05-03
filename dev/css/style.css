@@ -98,7 +98,7 @@ body:after{
 .off-2 { margin-left: 16.66666667%; }
 .off-1 { margin-left: 8.33333333%; }
 
-:hover, :hover * { t-webkit-ransition: all 0.15s ease; -moz-transition: all 0.15s ease; -o-transition: all 0.15s ease; transition: all 0.15s ease;}
+:hover, :hover * { t-webkit-ransition: all 0.15s ease; -webkit-transition: all 0.15s ease; transition: all 0.15s ease;}
 :focus { outline: none !important;}
 a { color: #000;}
 a, button { cursor: pointer; text-decoration: none;}
@@ -138,7 +138,7 @@ hr {
 .i, em { font-style: italic;}
 .absolute {position: absolute;}
 .relative {position: relative !important;}
-.radius {-webkit-border-radius: 4px;    -moz-border-radius: 4px;border-radius: 4px;}
+.radius {border-radius: 4px;}
 .semiopacity { opacity: 0.7; -moz-opacity: 0.7; }
 .nowrap {white-space: nowrap;}
 .linethrough, .line-through { text-decoration: line-through;}
@@ -238,7 +238,8 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
 input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea {
     box-sizing: border-box;
     -webkit-appearance: none;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"], input[type="url"]:focus, textarea:focus{
  
@@ -303,15 +304,14 @@ select {
     color: #fff;
     border-radius: 4px;
     padding: 0 17px;
-    transition: all 0.2s ease;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
     box-sizing: border-box;
     background-color: #ee464e;
     text-align: center;
 }
 .btn:hover { background-color: #f67177; }
-.btn:active { -webkit-transform: translateY(2px); -moz-transform: translateY(2px); transform: translateY(2px);}
+.btn:active { -webkit-transform: translateY(2px); transform: translateY(2px);}
 .btn.btn_blue { background-color: #5b8db7;}
 .btn.btn_blue:hover { background-color: #6CA7D8;}
 
@@ -327,8 +327,7 @@ select {
     background-color: #fff;
     box-sizing: border-box;
     height: 37px; line-height: 37px;
-    padding: 0 16px;
-    -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; 
+    padding: 0 16px; border-radius: 2px; 
     display: inline-block;
     vertical-align: middle;
     width: 170px;
@@ -406,11 +405,11 @@ select {
 .left_menu__item { border-top: 1px dashed #959595; font-size: 20px; line-height: 1.1;  position: relative;}
 .left_menu__item:last-child { border-bottom: 1px dashed #959595;}
 
-.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; transition: all 0s linear; padding: 5px;}
+.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; -webkit-transition: all 0s linear; transition: all 0s linear; padding: 5px;}
 
 
 .left_menu__link { position: relative; padding: 32px 0; display: block;}
-.left_menu__link:hover { text-decoration: underline;}
+.left_menu__link:hover { color: #5b8db7; }
 .left_menu__link:before { position: absolute; z-index: 1; left: -70px; top: -50px; width: 53px; height: 64px; margin: auto; display: block; bottom: -50px; margin: auto;}
 .left_menu__link > img {  position: absolute; z-index: 1; left: -70px; top: -50px; margin: auto; display: block; bottom: -50px; margin: auto; }
 
@@ -430,7 +429,7 @@ select {
 .partners .slick-dots > li > button { border: none; position: relative; font-size: 0; width: 17px; height: 17px; margin: 0 4px; outline: none; padding: 0;}
 .partners .slick-dots > li > button:before { display: block; position: relative; width: 17px; height: 17px; background-color: #e6e7e8; border-radius: 30px; content: ''; cursor: pointer;}
 .partners .slick-dots > li.slick-active > button:before { background-color: #ee464e; }
-.partners .slick-track { display: flex; align-items: center; }
+.partners .slick-track { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .partners__header { background-color: #f7f5f4; text-align: center; color: #5b8db7; font-size: 25.5px; height: 56px; line-height: 56px; margin-bottom: 20px; }
 .partners__list { overflow: hidden;}
 .partners__item { position: relative;  text-align: center; padding: 0 10px; box-sizing: border-box;}
@@ -664,8 +663,8 @@ select {
 .service_slider__item .btn { margin-top: 20px; }
 
 
-.service_slider .slick-arrow.slick-prev { position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); left: 10px; width: 60px; height: 60px; color: transparent; background: url(../img/slider_left.png) no-repeat scroll center transparent; border: none;}
-.service_slider .slick-arrow.slick-next { position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); right: 10px; width: 60px; height: 60px; color: transparent; background: url(../img/slider_right.png) no-repeat scroll center transparent; border: none;}
+.service_slider .slick-arrow.slick-prev { position: absolute; z-index: 2; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; width: 60px; height: 60px; color: transparent; background: url(../img/slider_left.png) no-repeat scroll center transparent; border: none;}
+.service_slider .slick-arrow.slick-next { position: absolute; z-index: 2; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 10px; width: 60px; height: 60px; color: transparent; background: url(../img/slider_right.png) no-repeat scroll center transparent; border: none;}
 
 .service_slider .slick-dots { position: absolute; text-align: center; bottom: 40px; left: 30%;}
 .service_slider .slick-dots > li { display: inline-block; }
@@ -891,7 +890,6 @@ select {
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
-       -o-transition: opacity .15s linear;
           transition: opacity .15s linear;
 }
 .fade.in {
@@ -908,12 +906,9 @@ select {
   height: 0;
   overflow: hidden;
   -webkit-transition-timing-function: ease;
-       -o-transition-timing-function: ease;
           transition-timing-function: ease;
   -webkit-transition-duration: .35s;
-       -o-transition-duration: .35s;
           transition-duration: .35s;
   -webkit-transition-property: height, visibility;
-       -o-transition-property: height, visibility;
           transition-property: height, visibility;
 }

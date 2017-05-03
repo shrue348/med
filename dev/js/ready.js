@@ -31,7 +31,9 @@ $(function(){
 	});
 
 
-	$('.service_slider').slick()
+	$('.service_slider').slick({
+		dots: true
+	})
 
 
 	baguetteBox.run('.baguetteBox');
