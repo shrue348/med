@@ -98,7 +98,7 @@ body:after{
 .off-2 { margin-left: 16.66666667%; }
 .off-1 { margin-left: 8.33333333%; }
 
-:hover, :hover * { t-webkit-ransition: all 0.15s ease; transition: all 0.15s ease;}
+:hover, :hover * { t-webkit-ransition: all 0.15s ease; -webkit-transition: all 0.15s ease; transition: all 0.15s ease;}
 :focus { outline: none !important;}
 a { color: #000;}
 a, button { cursor: pointer; text-decoration: none;}
@@ -238,7 +238,8 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
 input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea {
     box-sizing: border-box;
     -webkit-appearance: none;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"], input[type="url"]:focus, textarea:focus{
  
@@ -303,7 +304,8 @@ select {
     color: #fff;
     border-radius: 4px;
     padding: 0 17px;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
     box-sizing: border-box;
     background-color: #ee464e;
     text-align: center;
@@ -382,8 +384,8 @@ select {
 
 .main_menu__item.main_menu__item-search { width: 50%; }
 .main_menu__item.main_menu__item-search form { white-space: nowrap;}
-.main_menu__item-search input[type=text] { border: none; background-color: #fff; border-radius: 3px 0 0 3px; height: 29px; line-height: 29px; padding: 0 13px; font-size: 14px; display: table-cell; vertical-align: middle; width: 500px;}
-.main_menu__item-search button { border: none; border-radius: 0 3px 3px 0; height: 29px; line-height: 29px; text-align: center; width: 54px; background: url(../img/main_menu_search_ico.png) no-repeat scroll center #e1e1e1; display: table-cell; vertical-align: middle;}
+.main_menu__item-search input[type=text] { border: none; background-color: #fff; border-radius: 3px 0 0 3px; height: 29px; line-height: 29px; padding: 0 13px; font-size: 14px; display: inline-block; vertical-align: middle; width: 500px;}
+.main_menu__item-search button { border: none; border-radius: 0 3px 3px 0; height: 29px; line-height: 29px; text-align: center; width: 54px; background: url(../img/main_menu_search_ico.png) no-repeat scroll center #e1e1e1; display: inline-block; vertical-align: middle;}
 .main_menu__item-search { display: table-cell;}
 .main_menu__item-cart { width: 90px; display: block;}
 .main_menu__item-cart > a { display: block; height: 37px; background: url(../img/main_menu_cart_ico.png) no-repeat scroll center #ee464e;}
@@ -403,7 +405,7 @@ select {
 .left_menu__item { border-top: 1px dashed #959595; font-size: 20px; line-height: 1.1;  position: relative;}
 .left_menu__item:last-child { border-bottom: 1px dashed #959595;}
 
-.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; transition: all 0s linear; padding: 5px;}
+.datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; -webkit-transition: all 0s linear; transition: all 0s linear; padding: 5px;}
 
 
 .left_menu__link { position: relative; padding: 32px 0; display: block;}
@@ -887,7 +889,8 @@ select {
 
 .fade {
   opacity: 0;
-  transition: opacity .15s linear;
+  -webkit-transition: opacity .15s linear;
+          transition: opacity .15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -902,7 +905,10 @@ select {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition-timing-function: ease;
-  transition-duration: .35s;
-  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+          transition-property: height, visibility;
 }
