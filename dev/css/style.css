@@ -154,7 +154,7 @@ hr {
 .table > .table-cell { vertical-align: top;}
 .left.table-cell {
     width: 310px;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 .right.table-cell {
     width: 300px;
@@ -616,8 +616,8 @@ select {
 
 .research_list { margin-bottom: 30px;}
 .research_list__item { border-bottom: 1px solid #dfe0e1;}
-.research_list__item.active { background-color: #f7f5f4; margin-left: -15px; margin-right: -10px; padding: 28px 10px 28px 15px;}
-.research_list__item.active .table { margin-bottom: 20px;}
+/*.research_list__item.active { background-color: #f7f5f4; margin-left: -15px; margin-right: -10px; padding: 28px 10px 28px 15px;}*/
+/*.research_list__item.active .table { margin-bottom: 20px;}*/
 .research_list__item:first-child { border-top: 1px solid #dfe0e1;}
 .research_item { padding: 28px 0;}
 .research_item__title { font-size: 24px; font-weight: bold; color: #5b8db7; line-height: 32px; margin-bottom: 15px;}
@@ -706,6 +706,24 @@ select {
 
 
 
+.medspravki_banner { background-color:  #ef484f; color: #fff; margin-bottom: 20px;}
+.medspravki_banner .table-cell { vertical-align: middle; }
+.medspravki_banner__top { display: inline-block; margin-left: ; padding: 20px 17px; border-radius: 0 0 11px 11px; background-color: #ff757b; font-size: 26px; font-weight: bold; margin-left: 81px; }
+.medspravki_banner__middle { padding: 15px 20px 25px 81px; }
+.medspravki_banner__middle .table-cell:first-child { font-weight: bold; font-size: 36px;}
+.medspravki_banner__middle .table-cell:last-child { min-width: 140px; padding-left: 15px; border-left: 1px solid rgba(255,255,255,0.5); }
+.medspravki_banner__price_top { font-size: 25px; white-space: nowrap;}
+.medspravki_banner__price_top > span { font-size: 30px; }
+.medspravki_banner__price_bottom { font-size: 25px; white-space: nowrap;}
+.medspravki_banner__price_bottom > span { font-size: 36px; }
+.medspravki_banner__bottom { border-top: 1px solid #fff; padding: 15px 30px 25px; }
+
+
+
+
+
+
+
 .medspravki_table__title { font-size: 20px; font-weight: bold; text-align: center; margin-bottom: 15px; color: #5b8db7; }
 .medspravki_table__wrap table { width: 100%; color: #000; margin-bottom: 15px;}
 .medspravki_table__wrap table td { padding: 10px 20px 10px 50px;}
@@ -762,6 +780,16 @@ select {
 .corp_form .field { margin-bottom: 7px; }
 .corp_form .btn { display: block; width: 100%;}
 
+
+.corp_banner { margin-bottom: 30px; position: relative; height: 387px;}
+.corp_banner__img { display: block; line-height: 1; position: absolute; margin: auto; z-index: 1; max-width: 1000px;}
+.corp_banner__title { bottom: 170px; color: #ffffff; font-size: 37.5px; left: 18px; line-height: 1; max-width: 300px; position: absolute; font-weight: bold;position: absolute; z-index: 2;}
+.corp_banner__price { position: absolute; color: #ef474e; font-size: 23px; left: 18px; bottom: 103px; position: absolute; z-index: 2;}
+.corp_banner__price > span { font-size: 49px; font-weight: bold;}
+.corp_banner__desc { position: absolute; z-index: 2;background-color: rgba(240,81,92,0.9); bottom: 14px; box-sizing: border-box; color: #ffffff; font-size: 14.5px; left: 12px; max-width: 392px; padding: 5px; position: absolute; width: calc(100% - 24px);}
+.corp_banner__desc p { margin-bottom: 10px; }
+.corp_banner__desc p:last-child { margin-bottom: 0; }
+
 .corp_preim__item { margin: 30px 0; text-align: center; }
 .corp_preim__item:nth-child(3n+1) { clear: left; }
 .corp_preim__item_img { margin-bottom: 10px; }
@@ -772,12 +800,12 @@ select {
 .corp_top__item:nth-child(3n+1) { clear: left; }
 .corp_top__item_img { margin-bottom: 10px; }
 .corp_top__item_title { margin-bottom: 10px; font-size: 19px; font-weight: bold; color: #ef474e;}
-.corp_top__item_desc { color: #a7a9ac; font-size: 14px;}
-.corp_top__item_desc li::before {
+.corp_top__item_desc { color: #a7a9ac; font-size: 14px; text-align: left; width: 80%; margin: 0 auto;}
+.corp_top__item_desc li:before {
     background-color: #ef474e !important;
     display: inline-block !important;
-    position: relative !important;
-    top: -4px !important;
+    position: absolute !important;
+    top: 7px !important;
 }
 
 

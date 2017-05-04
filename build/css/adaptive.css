@@ -1,4 +1,10 @@
 
+@media (min-width: 980px) {
+	.foto_cat__item_desc_wrap > .row > .col-7,
+	.foto_cat__item_desc_wrap > .row > .col-5 { width: 100%; }
+}
+
+
 /*979*/		@media (min-width: 768px) and (max-width: 979px) {
 	.wrapper { width: 768px;}
 	.header_search { width: 180px;}
@@ -31,14 +37,19 @@
 	.left_menu__link { font-size: 17px; }
 	.docs__list { padding: 0; }
 
-	.foto_cat__item_img_wrap.col-8 { width: 100%; }
-	.foto_cat__item_desc_wrap.col-4 { display: none; }
+	.foto_cat__item_img_wrap.col-8 { width: 100%; margin-bottom: 10px;}
+	.foto_cat__item_desc_wrap.col-4 { width: 100%; }
+
 	.main_menu__item-cart { width: 68px; }
 	.form_wrap { padding: 17px; }
 	.service_slider__title .font44 { font-size: 25px !important; }
 	.service_slider__title .font30 { font-size: 18px !important; }
 	.service_slider .slick-dots { left: auto; right: 28px; bottom: 28px; }
 	.preim_block { height: auto; }
+
+	.medspravki_banner__bottom > span { display: block; }
+	.medspravki_banner__top { margin: 0 15px; }
+	.medspravki_banner__middle {  padding: 15px;}
 
 }
 			 
@@ -124,6 +135,15 @@
 	.sanknizka_form__bottom  img { display: none; }
 	.sanknizka_form .btn { position: relative; }
 
+	.corp_banner__title { font-size: 25px; }
+	.corp_banner__price > span { font-size: 36px; }
+
+	.medspravki_banner__bottom  { padding: 15px; }
+	.medspravki_banner__bottom > span { display: block; }
+	.medspravki_banner__top { margin: 0 15px; }
+	.medspravki_banner__middle {  padding: 15px;}
+
+
 	
 }
 /*680*/		@media (max-width: 680px) {
@@ -138,6 +158,9 @@
 	.header__loc_wrap.col-8 { width: 311px; float: none; margin: 0 auto 20px; }
 	.header__worktime { position: relative; width: auto; top: 0; left: 0; }
 	.header__soc_icons { position: relative; width: auto; top: 0; left: 0; }
+
+	.table-cell.left { width: 100%; display: block;}
+	.table-cell.center { width: 100%; display: block;}
 
 
 
@@ -164,9 +187,6 @@
 
 	.left_menu__link { font-size: 15.5px; }
 
-	.table-cell.left { padding-right: 30px;}
-	.table-cell.center { width: 60%; }
-
 	.dispanser__list.row > .col-4 { width: 100%; }
 	.main_menu__list-lab .main_menu__item { width: 100%; border: none; border-bottom: 1px solid #fff; }
 	.main_menu__item-cart { width: 90px; }
@@ -187,6 +207,9 @@
 	.corp_preim__item{ width: 50%; }
 	.corp_preim__item:nth-child(3n+1) { clear: none; }
 	.corp_preim__item:nth-child(2n+1) { clear: left; }
+
+	.corp_banner__price { bottom: 115px; }
+	.corp_preim-inside .corp_preim__item.col-4 { width: 100%;  }
 }
 
  
@@ -259,6 +282,12 @@
 	.corp_preim__item { width: 100%; }
 	.corp_top__item { width: 100%; }
 	.corp_preim-inside .corp_preim__item.col-4 { width: 100%; }
+
+	.medspravki_banner__middle .table-cell:first-child { font-size: 20px; }
+	.medspravki_banner__price_top { font-size: 18px; }
+	.medspravki_banner__price_top > span { font-size: 22px; }
+	.medspravki_banner__price_bottom { font-size: 18px; }
+	.medspravki_banner__price_bottom > span { font-size: 26px; }
 }
 
 
