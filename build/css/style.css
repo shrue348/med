@@ -446,6 +446,7 @@ select {
 .docs__item_ico { margin-bottom: -5px; }
 .docs__item_ext { font-size: 12px; }
 .docs__item_size { font-size: 12px; }
+.docs__item_desc { margin-top: 5px; }
 
 
 .add_articles { border: 1px solid #dddedf; margin: 0 auto 30px; max-width: 515px; }

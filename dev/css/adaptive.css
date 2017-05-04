@@ -51,6 +51,8 @@
 	.medspravki_banner__top { margin: 0 15px; }
 	.medspravki_banner__middle {  padding: 15px;}
 
+	.contacts_form .col-6 { width: 100%; }
+
 }
 			 
 /*767*/		@media (max-width: 767px) {
@@ -142,6 +144,8 @@
 	.medspravki_banner__bottom > span { display: block; }
 	.medspravki_banner__top { margin: 0 15px; }
 	.medspravki_banner__middle {  padding: 15px;}
+
+	.contacts_form .col-6 { width: 100%; }
 
 
 	
