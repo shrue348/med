@@ -159,80 +159,89 @@
 			<h1>Калькулятор санитарной книжки</h1>
 
 			<p>Для расчета конечной стоимости санитарной книжки Вы можете воспользоваться онлайн-калькулятором. <br>Расчет стоимости происходит автоматически, ниже можно выбрать необходимый тип санитарной книжки:</p>
+			
 
-			<div class="sanknizka_calc sanknizka_calc-dark">
-				<label class="sanknizka_calc__item">
-					<input type="radio"> Оформление новой санитарной книжки (по акции)
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio"> Продление действующей санитарной книжки
-				</label>
-			</div>
-
-			<h3>Оформление новой санитарной книжки (по акции)</h3>
 			<div class="sanknizka_calc">
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для медсотрудников со средним специальным образованием, ассистентов стоматологов и врачей стоматологов
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для работников водолечебниц и бассейнов
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для работников дошкольных образовательных организаций всех типов
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для работников образовательных организаций всех типов и видов
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для работников пищеблоков детских образовательных учреждений, организаций всех типов
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для работников пищевой промышленности, предприятий общественного питания
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для сотрудников коммунального хозяйства
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для сотрудников общежитий и гостиниц , проводников и стюардесс железнодорожных перевозок
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для сотрудников предприятий бытового обслуживания
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для сотрудников промышленной торговли
-				</label>
+				<div class="sanknizka_calc__price">
+					<div class="sanknizka_calc__price_top">Итого:</div>
+					<div class="sanknizka_calc__price_bottom">2 000 <span class="rub">Р</span></div>
+				</div>
+
+				<div class="sanknizka_calc sanknizka_calc-dark">
+					<label class="sanknizka_calc__item">
+						<input type="radio"> Оформление новой санитарной книжки (по акции)
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio"> Продление действующей санитарной книжки
+					</label>
+				</div>
+
+				<h3>Оформление новой санитарной книжки (по акции)</h3>
+				<div class="sanknizka_calc">
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для медсотрудников со средним специальным образованием, ассистентов стоматологов и врачей стоматологов
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для работников водолечебниц и бассейнов
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для работников дошкольных образовательных организаций всех типов
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для работников образовательных организаций всех типов и видов
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для работников пищеблоков детских образовательных учреждений, организаций всех типов
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для работников пищевой промышленности, предприятий общественного питания
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для сотрудников коммунального хозяйства
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для сотрудников общежитий и гостиниц , проводников и стюардесс железнодорожных перевозок
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для сотрудников предприятий бытового обслуживания
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для сотрудников промышленной торговли
+					</label>
+				</div>
+
+
+
+				<h2>Паспорт здоровья</h2>
+				<div class="sanknizka_calc sanknizka_calc-dark">
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для женщин до 40 лет
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для женщин после 40 лет
+					</label>
+					<label class="sanknizka_calc__item">
+						<input type="radio">Для мужчин
+					</label>
+				</div>
+
+
+				<h3>Для женщин до 40 лет</h3>
+
+				<table class="price_table">
+					<tbody>
+						<tr><td>Наименование</td><td>Цена</td></tr>
+						<tr><td><label><input type="checkbox"> Электрокардиограмма</label></td><td>150</td></tr>
+						<tr><td><label><input type="checkbox"> Клинический анализ крови</label></td><td>150</td></tr>
+						<tr><td><label><input type="checkbox"> Общий анализ мочи</label></td><td>150</td></tr>
+						<tr><td><label><input type="checkbox"> Исследование уровня холестерина в крови</label></td><td>150</td></tr>
+						<tr><td><label><input type="checkbox"> Исследование уровня глюкозы в крови</label></td><td>150</td></tr>
+						<tr><td><label><input type="checkbox"> Заключение гинеколога <br>(Цитологическое исследование мазков <br>из цервикального канала шейки матки)</label></td><td>150</td></tr>
+					</tbody>
+
+				</table>
 			</div>
-
-
-
-			<h2>Паспорт здоровья</h2>
-			<div class="sanknizka_calc sanknizka_calc-dark">
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для женщин до 40 лет
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для женщин после 40 лет
-				</label>
-				<label class="sanknizka_calc__item">
-					<input type="radio">Для мужчин
-				</label>
-			</div>
-
-
-			<h3>Для женщин до 40 лет</h3>
-
-			<table class="price_table">
-				<tbody>
-					<tr><td>Наименование</td><td>Цена</td></tr>
-					<tr><td><label><input type="checkbox"> Электрокардиограмма</label></td><td>150</td></tr>
-					<tr><td><label><input type="checkbox"> Клинический анализ крови</label></td><td>150</td></tr>
-					<tr><td><label><input type="checkbox"> Общий анализ мочи</label></td><td>150</td></tr>
-					<tr><td><label><input type="checkbox"> Исследование уровня холестерина в крови</label></td><td>150</td></tr>
-					<tr><td><label><input type="checkbox"> Исследование уровня глюкозы в крови</label></td><td>150</td></tr>
-					<tr><td><label><input type="checkbox"> Заключение гинеколога <br>(Цитологическое исследование мазков <br>из цервикального канала шейки матки)</label></td><td>150</td></tr>
-				</tbody>
-
-			</table>
+				
 
 			<div class="last_news">
 				<div class="last_news__header">Полезные статьи</div>
@@ -320,7 +329,12 @@
 		</div>
 	</div>
 </div>
-
+<svg width="0" height="0">
+  <clipPath id="article-svg">
+    <polygon points="0 118,137 118,137 68,146 59,137 50,137 0,0 0"> 
+    </polygon>
+  </clipPath>
+</svg>
 
 </body>
 </html>

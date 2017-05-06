@@ -53,6 +53,11 @@
 
 	.contacts_form .col-6 { width: 100%; }
 
+	.kosmetology_form__wrap  { padding: 3px 14px 3px 15px; background: none #f0f1f1; }
+	.kospetology_preim .col-6 { width: 100%; }
+	.kosmetology_how__item_img { display: none; }
+	.kosmetology_protiv:after { display: none; }
+
 }
 			 
 /*767*/		@media (max-width: 767px) {
@@ -127,16 +132,6 @@
 	.service_slider__title .font44 { font-size: 25px !important; }
 	.service_slider__title .font30 { font-size: 18px !important; }
 
-	.sanknizka_form__top,
-	.sanknizka_form__bottom { width: 100%; }
-	.sanknizka_form__top .field,
-	.sanknizka_form__bottom .field { position: relative; left: 0 !important; top: 0 !important; margin-bottom: 20px; width: 100% !important;}
-	.sanknizka_form__top .field:after,
-	.sanknizka_form__bottom .field:after { display: none !important; }
-	.sanknizka_form__top  img,
-	.sanknizka_form__bottom  img { display: none; }
-	.sanknizka_form .btn { position: relative; }
-
 	.corp_banner__title { font-size: 25px; }
 	.corp_banner__price > span { font-size: 36px; }
 
@@ -147,7 +142,10 @@
 
 	.contacts_form .col-6 { width: 100%; }
 
-
+	.kosmetology_form__wrap  { padding: 3px 14px 3px 15px; background: none #f0f1f1; }
+	.kospetology_preim .col-6 { width: 100%; }
+	.kosmetology_how__item_img { display: none; }
+	.kosmetology_protiv:after { display: none; }
 	
 }
 /*680*/		@media (max-width: 680px) {
@@ -214,6 +212,10 @@
 
 	.corp_banner__price { bottom: 115px; }
 	.corp_preim-inside .corp_preim__item.col-4 { width: 100%;  }
+
+	.kosmetology_banner .font28 { font-size: 20px !important; }
+	.kosmetology_banner .font27 { font-size: 19px !important; }
+	.kosmetology_banner .font26 { font-size: 18px !important; }
 }
 
  
@@ -274,6 +276,10 @@
 	.about_list { text-align: center; background-color: #EE464E;}
 	.about_list__item.col-by5 { width: 30%; float: none; display: inline-block; vertical-align: middle;}
 
+	.kosmetology_banner .font28 { font-size: 17px !important; }
+	.kosmetology_banner .font27 { font-size: 16px !important; }
+	.kosmetology_banner .font26 { font-size: 15px !important; }
+
 }
 
 /*320*/		@media (max-width: 340px) {
@@ -292,6 +298,16 @@
 	.medspravki_banner__price_top > span { font-size: 22px; }
 	.medspravki_banner__price_bottom { font-size: 18px; }
 	.medspravki_banner__price_bottom > span { font-size: 26px; }
+
+	.sanknizka_form__top,
+	.sanknizka_form__bottom { width: 100%; }
+	.sanknizka_form__top .field,
+	.sanknizka_form__bottom .field { position: relative; left: 0 !important; top: 0 !important; margin-bottom: 20px; width: 100% !important;}
+	.sanknizka_form__top .field:after,
+	.sanknizka_form__bottom .field:after { display: none !important; }
+	.sanknizka_form__top  img,
+	.sanknizka_form__bottom  img { display: none; }
+	.sanknizka_form .btn { position: relative; }
 }
 
 

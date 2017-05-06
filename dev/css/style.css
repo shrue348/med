@@ -190,6 +190,7 @@ h4, h5, h6, .h4, .h5, .h6 { margin-bottom: 10px; }
 .font22 {font-size: 22px !important; }
 .font24 {font-size: 24px !important; }
 .font26 {font-size: 26px !important; }
+.font27 {font-size: 27px !important; }
 .font28 {font-size: 28px !important; }
 .font30 {font-size: 30px !important; }
 .font36 {font-size: 36px !important; }
@@ -280,14 +281,14 @@ select {
 .txt { line-height: 1.2; color: #000;}
 .txt h2, .txt h3, .txt h4 { line-height: 1.3;}
 .txt p { margin-bottom: 24px;}
-.txt ul  { padding-left: 10px; margin-bottom: 15px; }
-.txt ul > li { position: relative; margin-bottom: 7px;  }
+.txt ul  { margin-bottom: 15px; }
+.txt ul > li { position: relative; margin-bottom: 7px; overflow: hidden; padding-left: 10px; }
 .txt ul > li:before {
     background-color: #5b8db7;
     border-radius: 50%;
     content: '';
     height: 4px;
-    left: -10px;
+    left: 0;
     position: absolute;
     top: 7px;
     width: 5px;
@@ -378,7 +379,7 @@ select {
 .main_menu__item:hover .main_menu__sub { display: block;}
 
 .main_menu__sub_item { display: block;}
-.main_menu__sub_link { color: #fff; font-size: 14px; padding: 0 5px 0 15px; box-sizing: border-box; display: block;}
+.main_menu__sub_link { color: #fff; font-size: 14px; padding: 4px 15px 4px 15px; box-sizing: border-box; display: block; line-height: 0.9; }
 .main_menu__sub_link:hover { background-color: #5b8db7; }
 
 
@@ -414,7 +415,7 @@ select {
 .left_menu__link > img {  position: absolute; z-index: 1; left: -70px; top: -50px; margin: auto; display: block; bottom: -50px; margin: auto; }
 
 .last_news { margin-bottom: 20px; border: 1px solid #e7e7e8; }
-.last_news__header { color: #5b8db7; font-size: 22px; text-align: center; background-color: #f7f6f5; height: 60px; line-height: 60px; }
+.last_news__header { color: #5b8db7; font-size: 22px;  background-color: #f7f6f5; height: 60px; line-height: 60px; padding: 0 15px 0 32px; }
 .last_news__list { padding: 20px 20px 20px 45px;  }
 .last_news__item { position: relative; margin-bottom: 8px; }
 .last_news__item:before { position: absolute; z-index: 1; content: ''; width: 5px; height: 4px; border-radius: 50%; background-color: #5b8db7; top: 8px; left: -10px;}
@@ -737,7 +738,7 @@ select {
 
 
 
-.sanknizka_calc { margin-bottom: 30px; }
+.sanknizka_calc { margin-bottom: 30px; position: relative;}
 .sanknizka_calc-dark { background-color: #f7f5f4; }
 .sanknizka_calc__item { display: block;  border-bottom: 1px solid #e1e1e1; padding: 10px;}
 .sanknizka_calc__item:first-child { display: block;  border-top: 1px solid #e1e1e1;}
@@ -751,7 +752,7 @@ select {
 .sanknizka_form__bottom { margin: 0 auto; position: relative; width: 455px;}
 .sanknizka_form__top img,
 .sanknizka_form__bottom img { display: block; line-height: 1; }
-.sanknizka_form .field  { border: 1px solid #f0515c; display: block;}
+.sanknizka_form .field  { border: 1px solid #f0515c; display: block; box-sizing: border-box;}
 .sanknizka_form .field input[type=text] { background-color: #fff; width: 100%; box-sizing: border-box; border: none;}
 .sanknizka_form .field span { color: #fff; position: relative; background-color: #f0515c; display: block; font-size: 11px; padding: 2px;}
 .sanknizka_form__top .field { width: 240px; position: absolute; left: 20px; top: 125px;  }
@@ -761,7 +762,7 @@ select {
 .sanknizka_form__bottom .field:nth-child(2) { top: 73px; left: 120px; width: 316px;}
 .sanknizka_form__bottom .field:nth-child(3) { top: 150px; left: 120px; width: 316px;}
 .sanknizka_form__bottom .field:nth-child(4) { top: 230px; left: 240px; width: 195px;}
-.sanknizka_form__bottom .field:nth-child(4) > input[type=text] { width: 87px;}
+.sanknizka_form__bottom .field:nth-child(4) > input[type=text] { width: 84px;}
 .sanknizka_form__bottom .field:nth-child(1) span:after,
 .sanknizka_form__bottom .field:nth-child(2) span:after,
 .sanknizka_form__bottom .field:nth-child(3) span:after,
@@ -774,6 +775,15 @@ select {
 .sanknizka_form__bottom .field span { display: inline-block; vertical-align: baseline; width: 100px; padding: 7px 2px 3px; position: relative;}
 .sanknizka_form__bottom .field input[type=text]  { display: inline-block; vertical-align: baseline; width: 120px;}
 .sanknizka_form .btn { position: absolute; z-index: 1; margin: auto; bottom: 0; left: 0; right: 0; }
+
+
+
+.sanknizka_calc__price { border: 2px solid #f0515c; padding: 30px 10px 5px; display: inline-block; margin-bottom: 20px; background-color: #fff; position: absolute; z-index: 2; top: 0; right: 0;}
+.sanknizka_calc__price_top { color: #abadb0; font-weight: bold; margin-bottom: 5px; font-size: 12.5px; }
+.sanknizka_calc__price_bottom { color: #f0515c; font-size: 37.5px; font-weight: bold; }
+
+.sanknizka_calc__price.fixed { position: fixed; }
+
 
 
 .corp_txt { max-width: 650px; margin: 20px auto 40px; }
@@ -813,11 +823,6 @@ select {
 .corp_preim-inside { text-align: center; }
 .corp_preim-inside .corp_preim__item.col-4 { width: 48%; float: none; display: inline-block;}
 
-.sanknizka_calc__price { border: 2px solid #f0515c; padding: 30px 10px 5px; display: inline-block; margin-bottom: 20px; }
-.sanknizka_calc__price_top { color: #abadb0; font-weight: bold; margin-bottom: 5px; font-size: 12.5px; }
-.sanknizka_calc__price_bottom { color: #f0515c; font-size: 37.5px; font-weight: bold; }
-
-
 
 
 .corp_left_menu__item { margin-bottom: 35px;}
@@ -846,71 +851,65 @@ select {
 .prof_preim_ico { color: #5b8db7; border: 2px solid #5b8db7; border-radius: 30px; width: 32px; height: 32px; line-height: 32px; margin: 0 auto 10px; text-align: center; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.kosmetology_banner { position: relative; display: inline-block;}
+.kosmetology_banner__top { position: absolute; color: #fff; background-color: #ee464e; text-align: center; padding: 15px; border-radius: 0 0 5px 5px; top: 0; left: 0; z-index: 2;}
+.kosmetology_banner__middle { position: absolute; color: #fff; background-color: #ee464e; padding: 15px; bottom: 35px; left: 0; z-index: 2;}
+.kosmetology_banner__link { position: absolute; color: #fff; text-decoration: underline; background-color: #ee464e; white-space: nowrap; padding: 5px; right: 0; bottom: 15px; z-index: 2;}
+.kosmetology_banner__link:hover {  text-decoration: none; }
+.kosmetology_banner__bottom { color: #ee464e; text-align: center; margin: 10px 0;}
+
+
+.kosmetology_price_list_link { color: #fff; background-color: #ee464e; position: relative; font-size: 22px; font-weight: bold; text-decoration: underline; padding: 10px 27px 10px 55px; display: inline-block;}
+.kosmetology_price_list_link:before { content: url(../img/kosmetology_price_ico.png); position: absolute; left: 15px; top: 15px; }
+.kosmetology_price_list_link:hover { text-decoration: none; }
+
+
+.kosmetology_form { border: 1px solid #babcbe; margin-bottom: 30px; border-radius: 8px; }
+.kosmetology_form__title { text-align: center; color: #fff; padding: 5px 5px 7px; font-size: 20px; background-color: #5b8db7; }
+.kosmetology_form__wrap { background: url(../img/kosmetology_form_back.png) no-repeat scroll left bottom #f0f1f1; padding: 3px 38px 3px 190px; }
+.kosmetology_form__wrap table { width: 100%;  }
+.kosmetology_form__wrap table td { padding: 5px; vertical-align: middle; font-size: 16px;}
+.kosmetology_form__wrap input[type=text] { border: 1px solid #babcbe; border-radius: 3px; padding: 4px; box-sizing: border-box; width: 100%; background-color: #fff; }
+.kosmetology_form .btn { height: auto; line-height: 1.1; padding: 8px; }
+
+
+
+.kospetology_preim  { margin-bottom: 20px; padding: 0 30px;}
+.kospetology_preim__item { margin-bottom: 10px; display: table; width: 100%; white-space: nowrap; min-height: 95px;}
+.kospetology_preim__item .desc { display: inline-block; vertical-align: middle; position: relative; font-size: 18px; font-weight: bold; padding-left: 24px; text-align: left; white-space: normal; box-sizing: border-box; width: calc(100% - 80px);}
+.kospetology_preim__item .num { color: #fff; font-size: 60px; text-align: center; padding: 0 10px; border-radius: 5px; box-sizing: border-box; width: 75px; display: inline-block; position: relative; vertical-align: middle;}
+.kospetology_preim__item .num.red { background-color: #ef525d;}
+.kospetology_preim__item .num.blue { background-color: #5b8db7;}
+.kospetology_preim__item .num:after { border-top: 15px solid transparent; border-bottom: 15px solid transparent; width: 0; height: 0; margin: auto; top: 0; bottom: 0; right: -10px; content: ''; position: absolute;}
+.kospetology_preim__item .num.red:after { border-left: 15px solid  #ef525d;  }
+.kospetology_preim__item .num.blue:after { border-left: 15px solid #5b8db7;  }
+
+
+.kosmetology_how { margin-bottom: 30px; background-color: #f0f1f1; padding: 30px;}
+.kosmetology_how h2 {  text-align: center; color: #ef525d; margin-bottom: 30px;}
+.kosmetology_how__item { margin-bottom: 15px; }
+.kosmetology_how__item_img { float: left; display: block; line-height: 1; margin-right: 15px; margin-bottom: 10px; border-radius: 6px;}
+.kosmetology_how__item_title { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+.kosmetology_how__item_desc { font-size: 14px; }
+
+
+.kosmetology_protiv { margin-bottom: 30px; position: relative; padding-left: 30px;}
+.kosmetology_protiv:after {  content: url(../img/kosmetology_protiv.jpg); position: absolute; z-index: -1; right: 0; bottom: -20px;}
+.kosmetology_protiv__title { font-size: 24px; font-weight: bold; color: #5d8eb5; margin-bottom: 20px;}
+.kosmetology_protiv__title + p { margin-bottom: 10px; }
+.kosmetology_protiv__list { }
+.kosmetology_protiv__item { position: relative; margin-bottom: 8px;}
+.kosmetology_protiv__item:before {
+    background-color: #ef525d;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: -10px;
+    position: absolute;
+    top: 8px;
+    width: 5px;
+    z-index: 1;
+}
 
 
 
