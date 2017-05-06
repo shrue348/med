@@ -409,7 +409,7 @@ select {
 .datepicker.datepicker-dropdown { position: absolute; background-color: #fff; border: 1px solid #BFC1C3; -webkit-transition: all 0s linear; transition: all 0s linear; padding: 5px;}
 
 
-.left_menu__link { position: relative; padding: 32px 0; display: block;}
+.left_menu__link { position: relative; padding: 32px 0; display: table-cell; vertical-align: middle; height: 33px;}
 .left_menu__link:hover { color: #5b8db7; }
 .left_menu__link:before { position: absolute; z-index: 1; left: -70px; top: -50px; width: 53px; height: 64px; margin: auto; display: block; bottom: -50px; margin: auto;}
 .left_menu__link > img {  position: absolute; z-index: 1; left: -70px; top: -50px; margin: auto; display: block; bottom: -50px; margin: auto; }
