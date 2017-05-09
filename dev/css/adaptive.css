@@ -57,6 +57,9 @@
 	.kospetology_preim .col-6 { width: 100%; }
 	.kosmetology_how__item_img { display: none; }
 	.kosmetology_protiv:after { display: none; }
+	.kosmetology_banner .font28 { font-size: 20px !important; }
+	.kosmetology_banner .font27 { font-size: 19px !important; }
+	.kosmetology_banner .font26 { font-size: 18px !important; }
 
 }
 			 
@@ -146,6 +149,9 @@
 	.kospetology_preim .col-6 { width: 100%; }
 	.kosmetology_how__item_img { display: none; }
 	.kosmetology_protiv:after { display: none; }
+	.kosmetology_banner .font28 { font-size: 20px !important; }
+	.kosmetology_banner .font27 { font-size: 19px !important; }
+	.kosmetology_banner .font26 { font-size: 18px !important; }
 	
 }
 /*680*/		@media (max-width: 680px) {
